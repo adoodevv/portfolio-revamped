@@ -1,3 +1,5 @@
+import { HashLink as Link } from 'react-router-hash-link';
+
 interface Project {
    title: string;
    company: string;
@@ -25,11 +27,11 @@ function Projects() {
       <div className="bg-gradient-to-r from-gray-800 my-4 border p-5 rounded-2xl border-gray-700">
          <div className="flex justify-between items-center mb-8">
             <h2 className="text-xl font-bold">Featured Projects</h2>
-            <button className="text-xs hover:text-gray-300">View All</button>
+            <Link to="/#mywork" className="text-xs hover:text-gray-300">View all</Link>
          </div>
          <div className="grid grid-cols-1 gap-6">
             {projects.map((project, index) => (
-               <div key={index} className="border border-gray-700 rounded-lg p-6">
+               <div key={index} className="bg-gray-900/50 border border-gray-700 rounded-xl p-6">
                   <div className="flex justify-between items-center">
                      <h3 className="font-bold mb-2">{project.title}</h3>
                      <a href={project.link} target="_blank" rel="noreferrer" className="text-xs hover:text-gray-300">View Project</a>

@@ -4,7 +4,6 @@ import Toolkit from "../components/Toolkit"
 import Testimonial from "../components/Testimonial"
 
 function Home() {
-
    return (
       <div className="">
          <Hero />
@@ -14,7 +13,7 @@ function Home() {
             <Testimonial />
          </div>
       </div>
-   )
-}
+   );
+};
 
 export default Home;

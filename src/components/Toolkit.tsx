@@ -51,7 +51,7 @@ function Toolkit() {
 
    return (
       <div className="bg-gradient-to-r from-gray-800 my-4 border p-5 rounded-2xl border-gray-700">
-         <h2 className="text-2xl font-bold mb-8">Tool Kit</h2>
+         <h2 className="text-xl font-bold mb-8">Tool Kit</h2>
          <div className="max-w-[400px] mx-auto">
             <div className="grid grid-cols-3 grid-rows-3 gap-4 place-items-center">
                {tools.map((tool) => (

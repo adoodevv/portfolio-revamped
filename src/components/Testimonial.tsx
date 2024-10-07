@@ -20,10 +20,10 @@ function Testimonial() {
 
    return (
       <div className="my-4 border p-5 rounded-2xl border-gray-700">
-         <h2 className="text-2xl font-bold mb-8">Testimonials</h2>
+         <h2 className="text-xl font-bold mb-8">Testimonials</h2>
          <div className="grid grid-cols-1 gap-6">
             {testimonials.map((testimonial, index) => (
-               <div key={index} className="bg-gray-800 rounded-lg p-6">
+               <div key={index} className="bg-gray-800 rounded-xl p-6">
                   <p className="text-gray-300 mb-2 text-sm">{testimonial.text}"</p>
                   <div>
                      <p className="font-bold">{testimonial.name}</p>
