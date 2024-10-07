@@ -1,17 +1,23 @@
 function Hero() {
    return (
-      <div className="max-w-6xl mx-auto px-4 py-16">
+      <div className="max-w-7xl mx-auto">
          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-2">
-               <h1 className="text-4xl font-bold mb-6">Building Ideas with Clean Code</h1>
-               <p className="text-gray-300">
-                  Joe
+            <div className="bg-gradient-to-r from-gray-800 lg:col-span-2 border p-5 rounded-2xl border-gray-700">
+               <h1 className="text-3xl font-bold mb-6">Building Ideas & Creating Solutions</h1>
+               <p className="text-gray-300 text-sm">
+                  I'm a third-year Computer Engineering student at Kwame Nkrumah University of Science and Technology (KNUST), with a passion for bringing ideas to life through technology. As a natural project leader, I combine my technical expertise in robotics with front-end development skills to create innovative solutions. Currently exploring the intersection of hardware and software, I'm actively seeking opportunities to collaborate on projects that make a meaningful impact.
                </p>
             </div>
-            <div className="flex justify-center">
-               <div className="w-48 h-48 rounded-full overflow-hidden">
-                  <img src="/api/placeholder/192/192" alt="Profile" className="w-full h-full object-cover" />
+            <div className="flex flex-col items-center justify-center border p-5 rounded-2xl border-gray-700">
+               <div className="w-32 h-32 rounded-full overflow-hidden">
+                  <img src="/src/assets/hero.jpg" alt="Profile" className="w-full h-full object-cover" />
                </div>
+               <p className="text-gray-300 font-bold text-sm mt-2">
+                  Jonathan Darko Adoo
+               </p>
+               <p className="text-gray-300 text-xs">
+                  Roboticist & Web Developer
+               </p>
             </div>
          </div>
       </div>
