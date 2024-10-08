@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail, MapPin, GraduationCap, Briefcase } from 'lucide
 
 const About = () => {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="lg:mt-8 max-w-7xl mx-auto">
       <div className="grid md:grid-cols-3 gap-8 border p-6 rounded-2xl border-gray-700">
         <div className="md:col-span-1 flex flex-col items-center">
           <div className="w-48 h-48 rounded-full overflow-hidden mb-4">
