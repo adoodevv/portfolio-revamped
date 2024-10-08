@@ -7,7 +7,7 @@ const About = () => {
         <div className="md:col-span-1 flex flex-col items-center">
           <div className="w-36 h-36 sm:w-48 sm:h-48 rounded-full overflow-hidden mb-4">
             <img
-              src="/src/assets/hero.jpg"
+              src="hero.jpg"
               alt="Profile"
               className="w-full h-full object-cover"
             />
@@ -38,7 +38,7 @@ const About = () => {
               className="flex items-center gap-2 bg-gray-700/50 px-4 py-2 rounded-lg hover:bg-gray-700"
             >
               <Github size={18} />
-              GitHub
+              {/* GitHub */}
             </a>
             <a
               href="https://www.linkedin.com/in/jonathan-adoo-22a4691b2/"
@@ -47,14 +47,14 @@ const About = () => {
               className="flex items-center gap-2 bg-gray-700/50 px-4 py-2 rounded-lg hover:bg-gray-700"
             >
               <Linkedin size={18} />
-              LinkedIn
+              {/* LinkedIn */}
             </a>
             <a
               href="mailto:adoojonathan412@gmail.om"
               className="flex items-center gap-2 bg-gray-700/50 px-4 py-2 rounded-lg hover:bg-gray-700"
             >
               <Mail size={18} />
-              Email Me
+              {/* Email Me */}
             </a>
           </div>
         </div>

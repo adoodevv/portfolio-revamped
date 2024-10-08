@@ -10,7 +10,7 @@ function Hero() {
             </div>
             <div className="flex flex-col items-center justify-center border p-5 rounded-2xl border-gray-700">
                <div className="w-32 h-32 rounded-full overflow-hidden">
-                  <img src="/src/assets/hero.jpg" alt="Profile" className="w-full h-full object-cover" />
+                  <img src="hero.jpg" alt="Profile" className="w-full h-full object-cover" />
                </div>
                <p className="text-gray-300 font-bold text-sm mt-2">
                   Jonathan Darko Adoo
