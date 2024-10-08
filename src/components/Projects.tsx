@@ -27,7 +27,7 @@ function Projects() {
       <div className="bg-gradient-to-r from-gray-800 my-4 border p-5 rounded-2xl border-gray-700">
          <div className="flex justify-between items-center mb-8">
             <h2 className="text-xl font-bold">Featured Projects</h2>
-            <Link to="/#mywork" className="text-xs hover:text-gray-300">View all</Link>
+            <Link to="/mywork" className="text-xs hover:text-gray-300">View all</Link>
          </div>
          <div className="grid grid-cols-1 gap-6">
             {projects.map((project, index) => (
