@@ -7,7 +7,7 @@ function Home() {
    return (
       <div className="lg:mt-8">
          <Hero />
-         <div className="max-w-7xl mx-auto flex grid grid-cols-1 lg:grid-cols-3 gap-8">
+         <div className="max-w-7xl mx-4 lg:mx-auto flex grid grid-cols-1 lg:grid-cols-3 gap-8">
             <Projects />
             <Toolkit />
             <Testimonial />

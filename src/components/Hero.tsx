@@ -1,6 +1,6 @@
 function Hero() {
    return (
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-4 lg:mx-auto">
          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="bg-gradient-to-r from-gray-800 lg:col-span-2 border p-5 rounded-2xl border-gray-700">
                <h1 className="text-2xl font-bold mb-6">Building Ideas & Creating Solutions</h1>

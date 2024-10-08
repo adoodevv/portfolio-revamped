@@ -2,10 +2,10 @@ import { Github, Linkedin, Mail, MapPin, GraduationCap, Briefcase } from 'lucide
 
 const About = () => {
   return (
-    <div className="lg:mt-8 max-w-7xl mx-auto">
+    <div className="lg:mt-8 max-w-7xl mx-4 lg:mx-auto">
       <div className="grid md:grid-cols-3 gap-8 border p-6 rounded-2xl border-gray-700">
         <div className="md:col-span-1 flex flex-col items-center">
-          <div className="w-48 h-48 rounded-full overflow-hidden mb-4">
+          <div className="w-36 h-36 sm:w-48 sm:h-48 rounded-full overflow-hidden mb-4">
             <img
               src="/src/assets/hero.jpg"
               alt="Profile"
@@ -13,18 +13,18 @@ const About = () => {
             />
           </div>
           <div className="space-y-2 text-center">
-            <h2 className="text-2xl font-bold">Jonathan Adoo</h2>
-            <p className="text-gray-400">Computer Engineering Student</p>
-            <div className="flex items-center justify-center gap-2 text-gray-400">
+            <h2 className="text-lg sm:text-2xl font-bold">Jonathan Adoo</h2>
+            <p className="text-gray-400 text-sm sm:text-base">Computer Engineering Student</p>
+            <div className="flex items-center justify-center gap-2 text-gray-400 text-xs sm:text-sm">
               <MapPin size={16} />
               <span>Accra, Ghana</span>
             </div>
           </div>
         </div>
 
-        <div className="md:col-span-2 justify-center flex flex-col">
-          <h3 className="text-xl font-semibold mb-4">About Me</h3>
-          <p className="text-gray-300 mb-6">
+        <div className="md:col-span-2 flex flex-col justify-center">
+          <h3 className="text-lg sm:text-xl font-semibold mb-4">About Me</h3>
+          <p className="text-gray-300 mb-6 text-sm sm:text-base">
             I'm a third-year Computer Engineering student at Kwame Nkrumah University of Science
             and Technology (KNUST), passionate about robotics and front-end development. I
             combine technical expertise with project leadership skills to create innovative
@@ -60,15 +60,14 @@ const About = () => {
         </div>
       </div>
 
-
+      {/* Education and Experience */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-4">
-        {/* Education */}
         <div className="border p-6 rounded-2xl border-gray-700 bg-gradient-to-r from-gray-800">
           <div className="flex items-center gap-2 mb-6">
             <GraduationCap size={24} />
-            <h3 className="text-xl font-semibold">Education</h3>
+            <h3 className="text-lg sm:text-xl font-semibold">Education</h3>
           </div>
-          <div className="space-y-6">
+          <div className="space-y-6 text-sm sm:text-base">
             <div>
               <h4 className="font-semibold">BSc. Computer Engineering</h4>
               <p className="text-gray-300">Kwame Nkrumah University of Science and Technology</p>
@@ -78,20 +77,19 @@ const About = () => {
           </div>
         </div>
 
-        {/* Experience */}
         <div className="lg:col-span-2 border p-6 rounded-2xl border-gray-700 bg-gradient-to-r from-gray-800">
           <div className="flex items-center gap-2 mb-6">
             <Briefcase size={24} />
-            <h3 className="text-xl font-semibold">Experience</h3>
+            <h3 className="text-lg sm:text-xl font-semibold">Experience</h3>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-sm sm:text-base">
             <div>
               <h4 className="font-semibold">Robotics Trainer</h4>
               <p className="text-gray-300">Mikrobot Academy</p>
               <p className="text-gray-400">2022 - Present</p>
               <ul className="list-disc list-inside text-gray-300 mt-2">
-                <li>Lead teams to robotics competitons</li>
-                <li>Train students on basic robotics concepts and various technical challenges</li>
+                <li>Lead teams to robotics competitions</li>
+                <li>Train students on basic robotics concepts and technical challenges</li>
               </ul>
             </div>
             <div>
@@ -99,8 +97,8 @@ const About = () => {
               <p className="text-gray-300">CSIR - INSTI</p>
               <p className="text-gray-400">2024 - Present</p>
               <ul className="list-disc list-inside text-gray-300 mt-2">
-                <li>Learnt Front-end web development with React</li>
-                <li>Coordinated with other interns on various collaborative projects</li>
+                <li>Learnt front-end web development with React</li>
+                <li>Collaborated with interns on projects</li>
               </ul>
             </div>
           </div>
@@ -109,8 +107,8 @@ const About = () => {
 
       {/* Skills & Technologies */}
       <div className="border p-6 rounded-2xl border-gray-700 my-4">
-        <h3 className="text-xl font-semibold mb-6">Skills & Technologies</h3>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <h3 className="text-lg sm:text-xl font-semibold mb-6">Skills & Technologies</h3>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm sm:text-base">
           <div className="space-y-2">
             <h4 className="font-semibold">Programming</h4>
             <ul className="text-gray-300">
