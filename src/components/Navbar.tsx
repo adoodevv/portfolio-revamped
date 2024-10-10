@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { Home, Briefcase, User } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes, faHome, faBriefcase, faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar: React.FC = () => {
    const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +25,6 @@ const Navbar: React.FC = () => {
 
    return (
       <>
-         {/* Spacer div to prevent content from going under fixed navbar */}
          <div className="h-20"></div>
 
          <nav className="fixed top-0 left-0 right-0 z-50 p-4 bg-gray-900">
@@ -38,19 +36,19 @@ const Navbar: React.FC = () => {
                <div className="flex gap-2">
                   <Link to="/">
                      <button className={getButtonClasses('/')}>
-                        <Home size={18} />
+                        <FontAwesomeIcon icon={faHome} />
                         Home
                      </button>
                   </Link>
                   <Link to="/mywork">
                      <button className={getButtonClasses('/mywork')}>
-                        <Briefcase size={18} />
+                        <FontAwesomeIcon icon={faBriefcase} />
                         My Work
                      </button>
                   </Link>
                   <Link to="/about">
                      <button className={getButtonClasses('/about')}>
-                        <User size={18} />
+                        <FontAwesomeIcon icon={faUser} />
                         About Me
                      </button>
                   </Link>
@@ -84,20 +82,20 @@ const Navbar: React.FC = () => {
                <div className="flex flex-col items-start pt-20 px-4">
                   <Link to="/" className="w-full" onClick={() => setIsMenuOpen(false)}>
                      <button className={getMobileButtonClasses('/')}>
-                        <Home size={18} />
+                        <FontAwesomeIcon icon={faHome} />
                         Home
                      </button>
                   </Link>
                   <Link to="/mywork" className="w-full" onClick={() => setIsMenuOpen(false)}>
                      <button className={getMobileButtonClasses('/mywork')}>
-                        <Briefcase size={18} />
+                        <FontAwesomeIcon icon={faBriefcase} />
                         My Work
                      </button>
                   </Link>
                   <Link to="/about" className="w-full" onClick={() => setIsMenuOpen(false)}>
                      <button className={getMobileButtonClasses('/about')}>
-                        <User size={18} />
-                        About Me
+                        <FontAwesomeIcon icon={faUser} />
+                        About
                      </button>
                   </Link>
                   <div className="flex flex-col gap-2 mt-8 w-full">

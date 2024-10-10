@@ -1,4 +1,6 @@
-import { Github, Linkedin, Mail, MapPin, GraduationCap, Briefcase } from 'lucide-react';
+import { faXTwitter, faInstagram, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faMapPin, faGraduationCap, faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const About = () => {
   return (
@@ -16,7 +18,7 @@ const About = () => {
             <h2 className="text-lg sm:text-2xl font-bold">Jonathan Adoo</h2>
             <p className="text-gray-400 text-sm sm:text-base">Computer Engineering Student</p>
             <div className="flex items-center justify-center gap-2 text-gray-400 text-xs sm:text-sm">
-              <MapPin size={16} />
+              <FontAwesomeIcon icon={faMapPin} />
               <span>Accra, Ghana</span>
             </div>
           </div>
@@ -37,7 +39,7 @@ const About = () => {
               rel="noreferrer"
               className="flex items-center gap-2 bg-gray-700/50 px-4 py-2 rounded-lg hover:bg-gray-700"
             >
-              <Github size={18} />
+              <FontAwesomeIcon icon={faGithub} size="lg" />
               {/* GitHub */}
             </a>
             <a
@@ -46,14 +48,32 @@ const About = () => {
               rel="noreferrer"
               className="flex items-center gap-2 bg-gray-700/50 px-4 py-2 rounded-lg hover:bg-gray-700"
             >
-              <Linkedin size={18} />
+              <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
               {/* LinkedIn */}
+            </a>
+            <a
+              href="https://instagram.com/adoodevv"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 bg-gray-700/50 px-4 py-2 rounded-lg hover:bg-gray-700"
+            >
+              <FontAwesomeIcon icon={faInstagram} size="lg" />
+              {/* Instagram */}
+            </a>
+            <a
+              href="https://twitter.com/adoodevv"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 bg-gray-700/50 px-4 py-2 rounded-lg hover:bg-gray-700"
+            >
+              <FontAwesomeIcon icon={faXTwitter} size="lg" />
+              {/* X */}
             </a>
             <a
               href="mailto:adoojonathan412@gmail.om"
               className="flex items-center gap-2 bg-gray-700/50 px-4 py-2 rounded-lg hover:bg-gray-700"
             >
-              <Mail size={18} />
+              <FontAwesomeIcon icon={faEnvelope} size="lg" />
               {/* Email Me */}
             </a>
           </div>
@@ -64,7 +84,7 @@ const About = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-4">
         <div className="border p-6 rounded-2xl border-gray-700 bg-gradient-to-r from-gray-800">
           <div className="flex items-center gap-2 mb-6">
-            <GraduationCap size={24} />
+            <FontAwesomeIcon icon={faGraduationCap} size="xl" />
             <h3 className="text-lg sm:text-xl font-semibold">Education</h3>
           </div>
           <div className="space-y-6 text-sm sm:text-base">
@@ -79,7 +99,7 @@ const About = () => {
 
         <div className="lg:col-span-2 border p-6 rounded-2xl border-gray-700 bg-gradient-to-r from-gray-800">
           <div className="flex items-center gap-2 mb-6">
-            <Briefcase size={24} />
+            <FontAwesomeIcon icon={faBriefcase} size="xl" />
             <h3 className="text-lg sm:text-xl font-semibold">Experience</h3>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-sm sm:text-base">

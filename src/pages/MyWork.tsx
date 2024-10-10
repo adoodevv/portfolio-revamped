@@ -3,7 +3,7 @@ import Achievements from '../components/Achievements';
 
 function MyWork() {
   return (
-    <div className="lg:mt-8">
+    <div className="lg:mt-8 mx-4 lg:mx-auto">
       <FullProjects />
       <div className='max-w-7xl mx-auto'>
         <Achievements />
