@@ -32,7 +32,7 @@ const About = () => {
             combine technical expertise with project leadership skills to create innovative
             solutions that make a difference.
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-2">
             <a
               href="https://github.com/adoodevv"
               target="_blank"
