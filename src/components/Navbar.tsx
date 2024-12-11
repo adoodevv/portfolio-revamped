@@ -55,7 +55,6 @@ const Navbar: React.FC = () => {
                </div>
                <div className="flex gap-4 text-sm">
                   <a href="https://github.com/adoodevv" target="_blank" rel="noreferrer" className="hover:text-gray-300">Github</a>
-                  <a href="https://www.linkedin.com/in/jonathan-adoo-22a4691b2/" target="_blank" rel="noreferrer" className="hover:text-gray-300">LinkedIn</a>
                   <a href="src/assets/Resume.pdf" download target="_blank" rel="noreferrer" className="hover:text-gray-300">Resume</a>
                </div>
             </div>
@@ -107,15 +106,6 @@ const Navbar: React.FC = () => {
                         onClick={() => setIsMenuOpen(false)}
                      >
                         Github
-                     </a>
-                     <a
-                        href="https://www.linkedin.com/in/jonathan-adoo-22a4691b2/"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="px-4 py-2 hover:bg-gray-800/50 rounded-lg w-full"
-                        onClick={() => setIsMenuOpen(false)}
-                     >
-                        LinkedIn
                      </a>
                      <a
                         href="src/assets/Resume.pdf"

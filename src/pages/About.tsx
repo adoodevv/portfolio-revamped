@@ -1,4 +1,4 @@
-import { faXTwitter, faInstagram, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faXTwitter, faInstagram, faGithub, faReddit } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faMapPin, faGraduationCap, faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -43,13 +43,13 @@ const About = () => {
               {/* GitHub */}
             </a>
             <a
-              href="https://www.linkedin.com/in/jonathan-adoo-22a4691b2/"
+              href="https://www.reddit.com/user/adoodevv/"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 bg-gray-700/50 px-4 py-2 rounded-lg hover:bg-gray-700"
             >
-              <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
-              {/* LinkedIn */}
+              <FontAwesomeIcon icon={faReddit} size="lg" />
+              {/* Reddit */}
             </a>
             <a
               href="https://instagram.com/adoodevv"
